@@ -1,0 +1,83 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "d739829a-64e5-41e4-bb9a-73b455fe2331",
+   "metadata": {},
+   "source": [
+    "# Interacting whit SQL databases"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fd062aa8-d55c-4635-866c-082bc78a9c28",
+   "metadata": {},
+   "source": [
+    "# SQL PACKAGES\n",
+    "\n",
+    ". Pymysql : allows acces the MySQL databases server from python.\n",
+    "\n",
+    ". Ipython-sql: The ipython-sql package allows you to write SQL queries into code cells using magic commands."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "86686a6e-0874-4060-bd39-1abc2139ff7f",
+   "metadata": {},
+   "source": [
+    "# Magic commands\n",
+    "\n",
+    ". ٪ Iline \n",
+    "\n",
+    ". ٪ ٪ Multiple Lines "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fcafd82a-b94b-40e1-bc46-aa2204043bd2",
+   "metadata": {},
+   "source": [
+    "# PREPARING THE ENVIRENEMENT "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "90725978-dd9e-4d2a-a892-e58efdde5671",
+   "metadata": {},
+   "source": [
+    "# prepare SQL Envirenement \n",
+    "\n",
+    "٪ load_ext sql"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "643b0060-5f4e-4159-9c59-ede13a049431",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

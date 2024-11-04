@@ -1,0 +1,125 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "786a0604-5614-46b7-aeef-439acfea2254",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Load and activate the SQL extension to allow us to execute SQL in a Jupyter notebook. \n",
+    "# If you get an error here, make sure that mysql and pymysql are installed correctly. \n",
+    "\n",
+    "%load_ext sql"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "0373a36b-3f8f-474c-ba19-d2c87486c35d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "MetaData.__init__() got an unexpected keyword argument 'bind'\n",
+      "Connection info needed in SQLAlchemy format, example:\n",
+      "               postgresql://username:password@hostname/dbname\n",
+      "               or an existing connection: dict_keys([])\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Establish a connection to the local database using the '%sql' magic command.\n",
+    "# Replace 'password' with our connection password and `db_name` with our database name. \n",
+    "# If you get an error here, please make sure the database name or password is correct.\n",
+    "\n",
+    "%sql mysql+pymysql://root:password@localhost:3306/united_nations"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "52fb2854-41ba-4719-9b70-6bedea7f473d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Environment variable $DATABASE_URL not set, and no connect string given.\n",
+      "Connection info needed in SQLAlchemy format, example:\n",
+      "               postgresql://username:password@hostname/dbname\n",
+      "               or an existing connection: dict_keys([])\n"
+     ]
+    }
+   ],
+   "source": [
+    "%%sql\n",
+    "\n",
+    "SELECT \n",
+    "    *\n",
+    "FROM\n",
+    "    Access_to_Basic_Services\n",
+    "LIMIT 5;"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "03a15dcd-fab9-4a0b-8332-13ba49be554b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Environment variable $DATABASE_URL not set, and no connect string given.\n",
+      "Connection info needed in SQLAlchemy format, example:\n",
+      "               postgresql://root:19920731Hj@127.0.0.1/3306\united_nations",
+      "               or an existing connection: dict_keys([])\n"
+     ]
+    }
+   ],
+   "source": [
+    "%%sql\n",
+    "# 127.0.0.1 3306\n",
+    "\n",
+    "LIMIT 100;"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5124e5fa-23c8-49fa-9fb3-aea8437381dd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "%%sql\n",
+    "# 19920731Hj"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
